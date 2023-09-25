@@ -1,0 +1,19 @@
+.text-element p{
+  font-family: 'Poppins', sans-serif !important;
+}
+/*for label*/
+.field-container label, #fa91-cc55-label{
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.form-4RDxvMJv1i, #_builder-form label {
+  font-family: 'Poppins', sans-serif !important;
+}
+/*for input*/
+input {
+  font-family: 'Poppins', sans-serif !important;
+  }
+/*for placeholder*/
+input::placeholder {
+  font-family: 'Poppins', sans-serif !important;
+}

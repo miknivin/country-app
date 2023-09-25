@@ -1,0 +1,29 @@
+<body class="bg-light">
+  <div id="headingWrapper">
+    <h1 class="text-center text-primary my-4">Country Info</h1>
+  </div>
+
+  <nav class="navbar navbar-light">
+    <div class="container">
+      <form class="d-flex mx-auto">
+        <input class="form-control me-2" [(ngModel)]=" countryName" name="countryName" type="search" placeholder="Search" aria-label="Search">
+        <button (click)="fetchCountryDetails()" class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- ... -->
+<div class="container my-4 d-flex justify-content-center">
+  <div class="card me-4" style="width: 18rem;" *ngFor="let country of countryDetails">
+    <img [src]="country.flags.png" class="card-img-top" alt="Flag">
+    <div class="card-body">
+      <h5 class="card-title">{{ country.name.common }}</h5>
+      <p class="card-text">Languages: {{ country.languages | json }}</p>
+      <!-- You can customize how you display the languages -->
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    </div>
+  </div>
+</div>
+<!-- ... -->
+
+
